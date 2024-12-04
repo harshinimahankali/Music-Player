@@ -1,0 +1,56 @@
+body {
+  font-family: lucidacalligraphy;
+  justify-content: center;
+  text-align: center;
+  background-size: 1500px 700px;
+  /*background-image:url("https://i.gifer.com/U7f2.gif");*/
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  
+}
+
+.player-container {
+  margin-top: 100px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#currentSong {
+  font-size: 18px;
+  margin-top: 20px;
+}
+arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Left arrow */
+.prev {
+  border-width: 15px 20px 15px 0;
+  border-color: transparent #333 transparent transparent;
+}
+
+.prev:hover {
+  border-color: transparent #d7ccc8 transparent transparent;
+  transform: scale(1.1);
+}
+
+/* Right arrow */
+.next {
+  border-width: 15px 0 15px 20px;
+  border-color: transparent transparent transparent #333;
+}
+
+.next:hover {
+  transform: scale(1.1);
+}
